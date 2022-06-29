@@ -22,10 +22,14 @@ mongoose
     Logging.error(err);
   });
 
+
+
 // Routes
 app.use("/", router);
 app.use("/user", userRouter);
-// Body Parser
+
+
+// Middleware
 router.use(express.urlencoded({ extended: false}));
     router.use(express.json());     
 
